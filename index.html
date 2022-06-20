@@ -1,0 +1,38 @@
+<!-- HTML page for a dog breed guessing game -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Dog Breed Guess</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Maybe add a logo here -->
+        </nav>
+    </header>
+    <main>
+        <h1 class="heading">Guess Doggo Breed</h1>
+        <div class="container">
+            <div class="container__card">
+                <div class="container__img">
+                    <img src="./assets/images/doggo.jpg" class="container__img-actual">
+                </div>
+                <div class="container__form">
+                    <h2>What is the breed of the above doggo?</h2>
+                    <form action="index.php" class="container__form-actual" method="">
+                        <input type="radio" name="answer" value="1">Labrador<br>
+                        <input type="radio" name="answer" value="2">Poodle<br>
+                        <input type="radio" name="answer" value="3">Pug<br>
+                        <input type="radio" name="answer" value="4">Pomeranian<br>
+                        <input type="submit" class="container__form-btn" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
