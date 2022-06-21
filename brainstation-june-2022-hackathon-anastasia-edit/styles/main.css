@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3d5a80;
+}
+
+.navbar {
+  padding: 1rem;
+  background-color: #98c1d9;
+  display: flex;
+  align-items: center;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Patrick Hand", cursive;
+}
+.container__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #98c1d9;
+  margin-top: 7rem;
+  width: 30rem;
+  height: 37rem;
+  box-shadow: -8px 26px 51px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+.container__card-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.container__img-actual {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem;
+}
+.container__form-actual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.container__form-btn {
+  margin: 1rem;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #d90429;
+  background: #ee6c4d;
+}
+.container__form-btn:hover {
+  background: #fff;
+  color: #d90429;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
