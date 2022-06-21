@@ -11,7 +11,6 @@ body{
 
 //color scheme // #3d5a80 #98c1d9 #e0fbfc #ee6c4d
 .navbar{
-    height: 10vh;
     padding: 1rem;
     background-color: #98c1d9;
     display: flex;
@@ -25,20 +24,21 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 95vh;
     font-family: 'Patrick Hand', cursive;
     &__card{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // padding: 1rem;
     background-color: #98c1d9;
+    margin-top: 7rem;
     width: 30rem;
+    height: 37rem;
     box-shadow: -8px 26px 51px 2px rgba(0,0,0,0.5);
     border-radius: 1rem;
+
     &-heading{
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: bold;
         color: #333;
         text-align: center;
@@ -48,9 +48,9 @@ body{
     }
     &__img{
         &-actual{
-            width: 300px;
-            height: 270px;
-            object-fit: cover;
+            width: 15rem;
+            height: 15rem;
+            object-fit: contain;
         }
     }
     &__form{
@@ -58,7 +58,6 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
         text-align: center;
         font-size: 1.25rem;
         &-actual{
@@ -66,9 +65,10 @@ body{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 1rem;
         }
         &-btn{
-            margin: 0.25rem;
+            margin: 1rem;
             min-width: 130px;
             height: 40px;
             color: #fff;
@@ -86,5 +86,39 @@ body{
             background: #fff;
             color: #d90429
           }
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+// mobile view
+@media screen and (max-width: 510px){
+    .container{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        &__card{
+            width: 60%;
+            height: 10%;
+            &-heading{
+                font-size: 1.25rem;
+            }
+        }
+        &__img{
+            &-actual{
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+        &__form{
+            &-actual{
+                &-btn{
+                    width: 100%;
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
